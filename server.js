@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use('/', createProxyMiddleware({
-  target: 'https://michael-yuanhao-deng.vercel.app/',
+  target: 'https://staging.skyinsights.certik.com/',
   changeOrigin: true,
   // pathRewrite: {
   //   '^/': '/posts/My%20Story', // Rewrite root to the specific path
