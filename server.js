@@ -4,10 +4,10 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use('/', createProxyMiddleware({
-  target: 'https://skyinsights.certik.com',
+  target: 'https://skynet.certik.com/',
   changeOrigin: true,
   pathRewrite: {
-    '^/': '/', // rewrite path
+    '^/': '/leaderboards/non-token', // Rewrite root to the specific path
   },
 }));
 
