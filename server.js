@@ -4,10 +4,10 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use('/', createProxyMiddleware({
-  target: 'https://skynet.certik.com/',
+  target: 'https://michael-yuanhao-deng.vercel.app/',
   changeOrigin: true,
   pathRewrite: {
-    '^/': '/leaderboards/non-token', // Rewrite root to the specific path
+    '^/': '/posts/My%20Story', // Rewrite root to the specific path
   },
 }));
 
